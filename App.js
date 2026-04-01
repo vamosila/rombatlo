@@ -1,20 +1,20 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+/*
+* File: App.js
+* Author: Vámosi László Ádám
+* Copyright: 2026, Vámosi László Ádám
+* Group: Szoft II-N
+* Date: 2026-04-01
+* GitHub: https://github.com/vamosilaszloadam/
+* Licenc: MIT
+*/
+
+import { NavigationContainer } from '@react-navigation/native';
+import RouteStack from './RouteStack';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer>
+      <RouteStack />
+    </NavigationContainer>
   );
-}
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+};
